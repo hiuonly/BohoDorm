@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Dosis:wght@700&family=Gilda+Display&display=swap');
+body{
+    font-family: 'Gilda Display',serif;
+    padding-bottom: 20px;
+}
+.header{
+    position: relative;
+    min-height: 312px;
+    background: url('https://images.pexels.com/photos/261156/pexels-photo-261156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.header a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 10px;   
+}
+#form-addCustomer .form-group .form-mess{
+    color: red;
+}
+.header a:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.text-center .avatar{
+    border: 15px solid #fff;
+    overflow: hidden;
+    margin: 0px auto;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center .username{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+}
+.text-center .position{
+    text-align: center;
+    font-family: 'Barlow Condensed';
+    font-size: 20px;
+    color: #000;
+    margin-top: -15px;
+}
+.text-center .mediasocial{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.text-center .mediasocial li a img{
+    width: 30px;
+    height: 30px;
+}
+.text-center .mediasocial li{
+    margin: 10px 5px;
+}
+.form-group .btn{
+    padding: 8px 25px;
+}
+.text-center .box_img{
+    position: relative;
+}
+.text-center .round{
+    position: absolute;
+    bottom: 40px;
+    right: 45px;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-center .round input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+.text-center .round input[type='file']::-webkit-file-upload-button{
+    cursor: pointer;
+}
+.form-group{
+    position: relative;
+}
+.form-group #eye{
+    position: absolute;
+    right: 25px;
+    transform: translate(0,-50%);
+    top: 80%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .text-center .round{
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .text-center .round{
+        right: 9px;
+        bottom: 30px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .text-center .round{
+        right: 200px;
+        bottom: 30px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .text-center .round{
+        right: 140px;
+        bottom: 30px;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .text-center .round{
+        right: 100px;
+        bottom: 30px;
+    }
+}

@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-06-2022, 22:38:45
+    Author     : MSII
+*/
+
+.left,
+.right{
+    width: 48%;
+}
+.right{
+    float: right;
+    box-shadow: 1px 1px 4px 5px #ccc;
+    width: 49%;
+    padding-left: 15px;
+    height:81%;
+}
+.right p{
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.left img{
+    width: 250px;
+    height: 250px;
+}
