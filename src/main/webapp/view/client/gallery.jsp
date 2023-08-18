@@ -62,11 +62,6 @@
                                                 <li><i class="fas fa-wifi"></i> Free Wifi</li>
                                             </ul>
                                         </div>
-                                        <div class="col-md-4">
-                                            <ul>
-                                                <li><i class="fas fa-tv"></i> TV LCD</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                     <hr class="border-2">
                                     <div class="info-wrapper">

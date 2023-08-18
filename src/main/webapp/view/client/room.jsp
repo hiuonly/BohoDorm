@@ -69,12 +69,6 @@
                                             <li><i class="fas fa-utensils"></i> Breakfast</li>
                                         </ul>
                                     </div>
-                                    <div class="col-md-4">
-                                        <ul>
-                                            <li><i class="fas fa-tv"></i> TV LCD</li>
-                                            <li><i class="fas fa-swimming-pool"></i> Swimming Pool</li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <hr class="border-2">
                                 <div class="info-wrapper">
