@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Dosis:wght@700&family=Gilda+Display&display=swap');
+#more{
+    display: none;
+}
+/* =======  Pay Area style ======= */
+.pay_area{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pay_area .right-pay{
+    padding: 0 40px 40px 40px;
+}
+.pay_area .right-pay h3{
+    font-family: 'Gilda Display';
+    font-size: 18px;
+}
+.pay_area .right-pay .infoTime{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.pay_area .right-pay .infoTime .timetocheck span,.total_day h4, .selected_room h4{
+    font-weight: bold;
+    color: #aa8453;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: 'Gilda Display';
+}
+.pay_area .voucher h3 #show_voucher{
+    color: rgb(0, 123, 255);
+    font-size: 12px;
+    cursor: pointer;
+}
+.pay_area .voucher h3 #show_voucher:hover{
+    color: black;
+}
+.pay_area .voucher{
+    padding-bottom: 15px;
+}
+.pay_area .voucher #inputcode{
+    display: none;
+}
+.pay_area .voucher #inputcode select{
+    height: 40px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Gilda Display';
+}
+.pay_area .voucher #inputcode select::-ms-expand {
+    display: none;
+}
+.pay_area .voucher #inputcode select{
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+}
+.pay_area .voucher #inputcode select::after{
+   content: '\25BC';
+   position: absolute;
+   color: #fff;
+   top: 0;
+   right: 0;
+   padding: 0 1em;
+   background: #2b2e2e;
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
+}
+.pay_area .voucher #inputcode select:hover::after{
+       color: #23b499;
+}
+.pay_area .voucher #inputcode input::placeholder{
+    color: #ccc;
+}
+/*.pay_area .right-pay .voucher #inputcode a{
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-bottom: -10px;
+    color: black;
+    font-family: 'Gilda Display';
+}
+.pay_area .right-pay .voucher #inputcode a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+}
+.pay_area .right-pay .voucher #inputcode a span{
+    position: absolute;
+    display: block;
+}
+.pay_area .right-pay .voucher #inputcode a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}*/
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%;
+    }
+    50%,100%
+    {
+        left: 100%;
+    }
+}
+.pay_area .right-pay .voucher #inputcode a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+    0%
+    {
+        top: -100%;
+    }
+    50%,100%
+    {
+        top: 100%;
+    }
+}
+.pay_area .right-pay .voucher #inputcode a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+    0%
+    {
+        right: -100%;
+    }
+    50%,100%
+    {
+        right: 100%;
+    }
+}
+.pay_area .right-pay .voucher #inputcode a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4
+{
+    0%
+    {
+        bottom: -100%;
+    }
+    50%,100%
+    {
+        bottom: 100%;
+    }
+}
+
+.pay_area .right-pay .infoTime .timetocheck h4{
+    font-family: 'Gilda Display';
+    font-size: 14px;
+}
+.pay_area .right-pay .infoTime .timetocheck p{
+    margin-top: -10px;
+}
+.pay_area .right-pay .infoTime .time2{
+    border-left: 1px solid #ccc;
+}
+.pay_area .right-pay .infoTime .selected_room p{
+    font-weight: bold;
+    font-size: 14px;
+}
+.pay_area .right-pay .priceSum .row{
+    font-family: 'Gilda Display',serif;
+    font-size: 16px;
+}
+.pay_area .right-pay .priceSum .row .d-flex:nth-child(2){
+    margin-top: -15px;
+}
+.pay_area .right-pay .priceSum .row .d-flex:nth-child(3){
+    font-weight: bold;
+    color: black;
+}
+
+
+
+/* =======  Pay picture room style ======= */
+.pay_area .pay-picRoom .image_payroom img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* =======  Pay info room style ======= */
+.pay_area .pay-infoRoom .text-title{
+    font-family: 'Barlow Condensed',serif;
+    color: #aa8453;
+}
+.pay_area .pay-infoRoom h3{
+    font-family: 'Gilda Display';
+    font-size: 18px;
+}
+.pay_area .pay-infoRoom ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 60px;
+}
+.pay_area .pay-infoRoom ul li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'Gilda Display';
+}
+.pay_area .description{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+.pay_area .description h2{
+    font-family: 'Gilda Display';
+    color: black;
+    font-size: 20px;
+}
+.pay_area .description #myBtn{
+    position: relative;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 1px solid #aa8453;
+    margin-left: 40%;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Gilda Display';
+}
+
+/* form info */
+.pay_area .InfoBooking{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pay_area .InfoBooking h3{
+    font-family: 'Gilda Display';
+    color: black;
+    font-size: 20px;
+}
+.pay_area .InfoBooking .formBox{
+    position: relative;
+    width: 100%;
+}
+.pay_area .InfoBooking .formBox .rows50{
+    display: flex;
+    gap: 20px;  
+}
+.pay_area .InfoBooking .formBox .inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.pay_area .InfoBooking .formBox .inputBox input::placeholder{
+    color: #ccc;
+}
+.pay_area .InfoBooking .formBox .rows100 .inputBox{
+    width: 100%;
+}
+.pay_area .InfoBooking .formBox .inputBox span{
+    color: #aa8453;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Barlow Condensed', serif;
+}
+.pay_area .InfoBooking .formBox .inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.pay_area .InfoBooking .formBox .inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+.pay_area .InfoBooking .formBox .inputBox input[type="submit"]{
+    font-family: 'Gilda Display', serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 20px;
+    border: none;
+    background: black;
+    cursor: pointer;
+    width: 25%;
+}
+.pay_area .InfoBooking .formBox .rows100 .inputBox{
+    padding-top: 20px;
+    margin-left: 40%;
+}
+.pay_area .InfoBooking .formBox .inputBox input[type="submit"]:hover{
+    background: #ab8a62;
+}
+
+/* =======  Service-Menu style ======= */
+.Service-Menu .section-title span{
+    color: #050801;
+    font-size: 30px;
+}
+.Service-Menu .row:last-child{
+    background: #050801;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.Service-Menu .owl-carousel .owl-stage-outer {
+    padding: 20px 0 60px 0;
+}
+.Service-Menu .owl-theme .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 40%;
+    background: transparent;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #aa8453;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.Service-Menu .owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #aa8453;
+}
+.Service-Menu .bg-img .owl-theme .owl-nav [class*=owl-] {
+    color: #fff;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-next {
+    right: 0;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-next span,
+.Service-Menu .owl-carousel .owl-nav .owl-prev span {
+    font-size: 12px;
+}
+.Service-Menu .owl-theme:hover .owl-nav [class*=owl-] {
+    opacity: 1;
+}
+.Service-Menu .tabs-icon .item {
+    padding: 15px 5px;
+    cursor: pointer;
+}
+.Service-Menu .tabs-icon .item h6 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+    font-family: 'Gilda Display', serif;
+}
+.Service-Menu .tabs-icon .owl-item.actived .item,
+.Service-Menu .tabs-icon .item.active {
+    color: #fff;
+    position: relative;
+    background: transparent;
+    padding: 15px;
+    border: 1px solid #aa8453;
+}
+.Service-Menu .tabs-icon .owl-item.actived .item .icon,
+.Service-Menu .tabs-icon .item.active .icon {
+    color: #aa8453;
+}
+.Service-Menu .Service-Menu-content .cont {
+    display: none;
+}
+.Service-Menu .Service-Menu-content .cont .Service-Menu-info {
+    text-align: right;
+}
+.Service-Menu .Service-Menu-content .cont h5 {
+    font-size: 20px;
+    color: #aa8453;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px dashed #aa8453;
+    line-height: 2em;
+    font-family: 'Gilda Display', serif;
+}
+.Service-Menu .Service-Menu-content .cont p {
+    font-size: 15px;
+    color: #adadad;
+}
+.Service-Menu .Service-Menu-content .cont h5 .price {
+    color: #adadad;
+    float: right;
+}
+.Service-Menu .Service-Menu-content .cont p .checkS{
+    float: right;
+}
+.Service-Menu .Service-Menu-content .cont .numberS{
+    width: 40px;
+    font-size: 15px;
+    margin: 0 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.Service-Menu .Service-Menu-content .cont button{
+    background-color: #aa8453;
+    width: 30px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.Service-Menu .Service-Menu-content .cont button:hover{
+    background: #fff;
+    color: #000;
+}
+.Service-Menu .Service-Menu-content .cont .numberS:hover{
+    background: #aa8453;
+    color: #fff;
+}
+.Service-Menu .Service-Menu-content .active {
+    display: block;
+}
+.Service-Menu .owl-theme .owl-nav [class*=owl-] {
+    top: 18%;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-next {
+    right: -50px;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-prev {
+    left: -50px;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-prev {
+    left: -60px;
+}
+.Service-Menu .owl-carousel .owl-nav .owl-next {
+    right: -60px;
+}
+.Service-Menu .Service-Menu-content .cont .Service-Menu-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* form Step */
+.page-Step{
+    display: none;
+}
+.page-active{
+    display: block;
+}
+.pay_area .formPay{
+    width: 100%;
+    margin-top: 20px;
+}
+.pay_area .container .progress-bar{
+    background-color: #fff;
+    color: #050801;
+    margin: 40px 0;
+}
+.pay_area .container .progress-bar .step{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.pay_area .container .progress-bar .step p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 8px;
+    font-family: 'Gilda Display', serif;
+}
+.pay_area .container .progress-bar .step p.active{
+    color: #aa8453;
+}
+.pay_area .container .progress-bar .step .bullet{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.pay_area .container .progress-bar .step .bullet.active{
+    border-color: #aa8453;
+    background: #aa8453;
+}
+.pay_area .container .progress-bar .step:last-child .bullet:before,
+.pay_area .container .progress-bar .step:last-child .bullet:after{
+    display: none;
+}
+.pay_area .container .progress-bar .step .bullet:before,
+.pay_area .container .progress-bar .step .bullet:after{
+    position: absolute;
+    content: '';
+    bottom: 15px;
+    right: -330px;
+    height: 3px;
+    width: 300px;
+    background: #000;
+}
+.pay_area .container .progress-bar .step .bullet.active:after{
+    background: #aa8453;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animateStep 0.3s linear forwards;
+}
+@keyframes animateStep{
+    100%{
+        transform: scaleX(1);
+    }
+}
+@media only screen and (min-width: 768px) {
+    .pay_area .container .progress-bar .step .bullet:before,
+    .pay_area .container .progress-bar .step .bullet:after{
+        right: -130px;
+        width: 120px;
+    }
+}
+
+.pay_area .container .progress-bar .step .bullet span{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pay_area .container .progress-bar .step .bullet.active span{
+    display: none;
+}
+.pay_area .container .progress-bar .step .check{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 15px;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.pay_area .container .progress-bar .step .check.active{
+    display: block;
+    color: #fff;
+}
+
+.pay_area .field .btn{
+    padding: 5px 20px;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #050801 inset, 0 0 0 0 #050801;
+    transition: all 150ms ease-in-out;
+    font-family: 'Gilda Display', serif;
+    text-transform: uppercase;
+}
+.pay_area .field .btn:hover {
+    box-shadow: 0 0 10px 0 #03e9f4 inset, 0 0 10px 4px #03e9f4;
+    border-color: #03e9f4;
+    color: #050801;
+}
+.pay_area .formPay .page-Step h3{
+    font-family: 'Gilda Display', serif;
+    font-size: 20px;
+    color: #050801;
+}
+/* information bill */
+.pay_area .formPay .page-Step .boxRow{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pay_area .formPay .page-Step .infoBill{
+    border: 1px solid #050801;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.pay_area .formPay .page-Step .boxRow h4{
+    font-family: 'Barlow Condensed',serif;
+    color: #aa8453;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.pay_area .formPay .page-Step .boxRow p{
+    font-family: 'Gilda Display', serif;
+    font-weight: bold;
+    display: flex;
+    flex-flow: column;
+}
+/* payment */
+.pay_area .formPay .page-Step .card-header{
+    background-color: #fff;
+}
+.pay_area .formPay .page-Step .methodPayment{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pay_area .formPay .page-Step .card-header a{
+    font-family: 'Gilda Display', serif;
+    text-transform: uppercase;
+}
+.pay_area .formPay .page-Step .card-header a.nav-link.active{
+    background: #000;
+    color: #fff;
+}
+.pay_area .formPay .page-Step .card-header a.nav-link{
+    color: #050801;
+}
+.pay_area .formPay .page-Step .card-header .text-muted{
+    font-family: 'Barlow Condensed',serif;
+    font-weight: 900;
+}
+.pay_area .formPay .page-Step .card-header .btn-paypal{
+    padding: 5px 20px;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #050801 inset, 0 0 0 0 #050801;
+    transition: all 150ms ease-in-out;
+    font-family: 'Gilda Display', serif;
+    text-transform: uppercase;
+}
+.pay_area .formPay .page-Step .card-header .btn-paypal:hover{
+    box-shadow: 0 0 10px 0 #03e9f4 inset, 0 0 10px 4px #03e9f4;
+    border-color: #03e9f4;
+    color: #050801;
+}
+.pay_area .formPay .page-Step .list-unstyled,.title_day p,.table{
+    font-family: 'Gilda Display', serif;
+}
+.pay_area .formPay .page-Step .title_day p strong{
+    font-weight: bold;
+    color: #000;
+}
+.pay_area .formPay .page-Step .table thead{
+    color: #000;
+    text-transform: uppercase;
+}
