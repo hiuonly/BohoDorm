@@ -146,7 +146,7 @@
                                 </div>
                             </div>
                             <div class="image" style="background-image:url(https://watermark.lovepik.com/photo/20211209/large/lovepik-welcome-image-of-hotel-attendant-picture_501704691.jpg)">
-                                <img src="https://images.pexels.com/photos/1287460/pexels-photo-1287460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                                <img src="https://watermark.lovepik.com/photo/20211209/large/lovepik-welcome-image-of-hotel-attendant-picture_501704691.jpg" alt="">
                             </div>
                         </div>
 
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
                             <div class="image" style="background-image:url(https://thietkenoithatatz.com/wp-content/uploads/2022/10/thiet-ke-quan-cafe-san-vuon-16.jpg)">
-                                <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+                                <img src="https://thietkenoithatatz.com/wp-content/uploads/2022/10/thiet-ke-quan-cafe-san-vuon-16.jpg" alt="" />
                             </div>
                         </div>
 
