@@ -53,9 +53,11 @@
                             <div class="rooms2 mb-90 left animate-box" data-animate-effect="fadeInUp">
                                 <figure><img style="height: 500px; width: 70%; border-radius: 10%" src="img/${r.urlimage}" alt="" class="img-fluid"></figure>
                                 <div class="caption">
-                                    <h3>${r.price}$</h3>
                                     <h4><a href="roomdetail?rid=${r.stid}">${r.sname}</a></h4>
                                     <p>${r.describle}</p>
+                                    <c:if test="${r.stid == 1}">
+                                        <p>Open 7am - 9pm</p>  
+                                    </c:if> 
                                     <div class="row room-facilities">
                                         <div class="col-md-4">
                                             <ul>

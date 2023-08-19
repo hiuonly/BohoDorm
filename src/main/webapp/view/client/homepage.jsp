@@ -1,7 +1,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="db" class="com.boho.dorm.dao.DAO" scope="request"></jsp:useBean>
+<jsp:useBean id="db" class="dao.DAO" scope="request"></jsp:useBean>
     <!DOCTYPE html>
     <html>
         <head>
@@ -209,7 +209,7 @@
                                         <img src="img/${s.urlimage}" alt="">
                                         <div class="desc">
                                             <div class="name">${s.stname}</div>
-                                            <div class="amount" style="color: brown">The captivating bohemian touches come together to create an enchanting and unforgettable stay.</div>
+                                            <div class="amount" style="color: #64603E; text-align: center">The captivating bohemian touches come together to create an enchanting and unforgettable stay.</div>
                                         </div> 
                                     </div></a>
                                 </c:forEach>       

@@ -96,7 +96,7 @@
                                             Our garden is a delightful haven with lush greenery and potted plants, 
                                             bringing nature's beauty right to your doorstep. 
                                             A grand Koi pond with a serene rock garden adds an element of tranquility to the surroundings, 
-                                            making it the perfect spot to unwind and com.boho.dorm.connect with nature.
+                                            making it the perfect spot to unwind and connect with nature.
                                         </p>
                                         <p>
                                             Adjacent to the main accommodation area lies our enchanting coffee corner. 
@@ -145,8 +145,8 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="image" style="background-image:url(https://watermark.lovepik.com/photo/20211209/large/lovepik-welcome-image-of-hotel-attendant-picture_501704691.jpg)">
-                                <img src="https://watermark.lovepik.com/photo/20211209/large/lovepik-welcome-image-of-hotel-attendant-picture_501704691.jpg" alt="">
+                            <div class="image" style="background-image:url(img/snapedit_1691514609730.jpeg)">
+                                <img src="img/snapedit_1691514609730.jpeg" alt="">
                             </div>
                         </div>
 
@@ -163,7 +163,7 @@
                                 </div>
                             </div>
                             <div class="image" style="background-image:url(https://thietkenoithatatz.com/wp-content/uploads/2022/10/thiet-ke-quan-cafe-san-vuon-16.jpg)">
-                                <img src="https://thietkenoithatatz.com/wp-content/uploads/2022/10/thiet-ke-quan-cafe-san-vuon-16.jpg" alt="" />
+                                <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
                             </div>
                         </div>
 
