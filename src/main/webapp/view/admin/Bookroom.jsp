@@ -257,9 +257,6 @@
                                     Room
                                 </th>
                                 <th class="border-bottom">
-                                    RankRoom
-                                </th>
-                                <th class="border-bottom">
                                     TypeRoom
                                 </th>
                                 <th class="border-bottom">
@@ -289,11 +286,6 @@
                                             </span>
                                         </div>
                                     </a>        
-                                </td>
-                                <td>
-                                    <span class="fw-normal">
-                                        ${r.rankroom}
-                                    </span>
                                 </td>
                                 <td>
                                     <span class="fw-bold">

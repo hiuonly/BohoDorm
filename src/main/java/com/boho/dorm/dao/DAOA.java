@@ -153,7 +153,7 @@ public class DAOA {
     public Employees checkEmployees(String user) {
         String query = "select eid, urlimage, ename, birthofday, position, gender, eaddress, sdt,\n"
                 + "cccd, salary, employees.usid, qlusers.username, qlusers.password, qlusers.email, qlusers.urole\n"
-                + "from employees, qlusers\n"
+                + "from employees, QLusers\n"
                 + "where employees.usid = qlusers.usid and qlusers.username = ?";
         try {
             conn = new DBConnect().connection;
@@ -194,7 +194,7 @@ public class DAOA {
     }
 
     public void singup(String user, String pass, String email) {
-        String query = "INSERT INTO qlusers (username, password, email, urole) VALUES (?,?,?,0);";
+        String query = "INSERT INTO `hotel`.`qlusers` (`username`, `password`, `email`, `urole`) VALUES (?,?,?,0);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -446,9 +446,9 @@ public class DAOA {
 
     public List<Room> getSearchR(String txtSearch) {
         List<Room> list = new ArrayList<Room>();
-        String query = "select r.rid, r.urlimage1, r.urlimage2, r.urlimage3, t.roomtype, r.peopleNumber, r.rankofRoom , r.rstatus, r.bedNumber , r.priceRoom, r.describle\n"
+        String query = "select r.rid, r.urlimage1, r.urlimage2, r.urlimage3, t.roomtype, r.peopleNumber, r.rstatus, r.bedNumber , r.priceRoom, r.describle\n"
                 + "from room as r, roomtype as t \n"
-                + "where t.rtid = r.rtid and CONCAT(r.rid,t.roomtype, r.peopleNumber, r.rankofRoom ,r.bedNumber , r.priceRoom) like ?";
+                + "where t.rtid = r.rtid and CONCAT(r.rid,t.roomtype, r.peopleNumber ,r.bedNumber , r.priceRoom) like ?";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -637,7 +637,7 @@ public class DAOA {
     }
 
     public void addRoom(int rid, String aimg, String bimg, String cimg, String roomtype, int Peoplenumber, int bednumber, String rankRoom, int priceroom, String status, String describle) {
-        String query = "INSERT INTO room (rid, urlimage1, urlimage2, urlimage3, rtid, peopleNumber, rstatus, bedNumber, priceRoom, describle) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        String query = "INSERT INTO `hotel`.`room` (`rid`, `urlimage1`, `urlimage2`, `urlimage3`, `rtid`, `peopleNumber`, `rstatus`, `bedNumber`, `priceRoom`, `describle`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -668,7 +668,7 @@ public class DAOA {
     }
 
     public void addService(String shimage, String name, String nametype, String status, float price, String describlie) {
-        String query = "INSERT INTO services (urlimage, sname, stid, srstatus, price, describle) VALUES (?, ?, ?, ?, ?, ?);";
+        String query = "INSERT INTO `hotel`.`services` (`urlimage`, `sname`, `stid`, `srstatus`, `price`, `describle`) VALUES (?, ?, ?, ?, ?, ?);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -782,7 +782,7 @@ public class DAOA {
     }
 
     public void AcceptRoom(int rid, String status) {
-        String query = "UPDATE room SET rstatus = ? WHERE (rid = ?);";
+        String query = "UPDATE `hotel`.`room` SET `rstatus` = ? WHERE (`rid` = ?);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -804,7 +804,7 @@ public class DAOA {
     }
 
     public void AcceptService(int sid, String status) {
-        String query = "UPDATE services SET srstatus = ? WHERE (srid = ?);";
+        String query = "UPDATE `hotel`.`services` SET `srstatus` = ? WHERE (`srid` = ?);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -827,7 +827,7 @@ public class DAOA {
 
     public void UpdateR(int rid, String aimg, String bimg, String cimg, String roomtype, int Peoplenumber, int bednumber, String rankRoom, int priceroom, String describle) {
         String query = "update room set urlimage1 = ?, urlimage2 = ?, urlimage3 = ?, rtid = ?, peopleNumber = ?, \n"
-                + "rankofRoom = ?, bedNumber= ?, priceRoom = ?, describle = ?\n"
+                + "bedNumber= ?, priceRoom = ?, describle = ?\n"
                 + "where rid = ?";
         try {
             conn = new DBConnect().connection;
@@ -937,7 +937,7 @@ public class DAOA {
     }
 
     public void addVoucher(int vid, String img, String name, String descible, int discount) {
-        String query = "INSERT INTO voucher (vid, urlimage, vname, describle, discount) VALUES (?, ?, ?, ?, ?);";
+        String query = "INSERT INTO `hotel`.`voucher` (`vid`, `urlimage`, `vname`, `describle`, `discount`) VALUES (?, ?, ?, ?, ?);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -962,7 +962,7 @@ public class DAOA {
     }
 
     public void UpdateV(int vid, String img, String name, String descible, int discount) {
-        String query = "update voucher set urlimage = ?, vname = ?, describle = ?, discount = ? where vid = ?";
+        String query = "update voucher set urlimage = ?, vname = ?, describle = ?, discout = ? where vid = ?";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -1062,7 +1062,7 @@ public class DAOA {
     }
 
     public void Employees(String eimage, String name, String birthday, String position, String gender, String address, String sdt, String cccd, int salary, String user) {
-        String query = "INSERT INTO employees (urlimage, ename, birthofday, position, gender, eaddress, sdt, cccd, salary, usid) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        String query = "INSERT INTO `hotel`.`employees` (`urlimage`, `ename`, `birthofday`, `position`, `gender`, `eaddress`, `sdt`, `cccd`, `salary`, `usid`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -1362,10 +1362,12 @@ public class DAOA {
 
     public List<BookR> getBRoom() {
         List<BookR> list = new ArrayList<BookR>();
-        String query = "select r.rid, r.urlimage1, r.rankofRoom, t.roomType, r.priceRoom,\n"
-                + "o.datecheckin, o.datecheckout, DATEDIFF(day, o.datecheckin, o.datecheckout) * r.priceRoom, o.phid, DATEDIFF(day, o.datecheckin, o.datecheckout) as rdate\n"
-                + "from bookroom as o , room as r, roomtype as t\n"
-                + "where o.rid = r.rid and r.rtid = t.rtid";
+        String query = "SELECT r.rid, r.urlimage1, t.roomType, r.priceRoom,\n"
+                + "       o.datecheckin, o.datecheckout, DATEDIFF(o.datecheckout, o.datecheckin) * r.priceRoom AS total_price,\n"
+                + "       o.phid, DATEDIFF(o.datecheckout, o.datecheckin) AS rdate\n"
+                + "FROM bookroom AS o\n"
+                + "JOIN room AS r ON o.rid = r.rid\n"
+                + "JOIN roomtype AS t ON r.rtid = t.rtid;";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -1375,13 +1377,12 @@ public class DAOA {
                         rs.getInt(1),
                         rs.getString(2),
                         rs.getString(3),
-                        rs.getString(4),
-                        rs.getFloat(5),
+                        rs.getFloat(4),
+                        rs.getString(5),
                         rs.getString(6),
-                        rs.getString(7),
-                        rs.getFloat(8),
-                        rs.getInt(9),
-                        rs.getInt(10)));
+                        rs.getFloat(7),
+                        rs.getInt(8),
+                        rs.getInt(9)));
             }
         } catch (SQLException e) {
             // Handle any exceptions that occur
@@ -1400,7 +1401,7 @@ public class DAOA {
 
     public List<BookR> getSearchBRoom(String search) {
         List<BookR> list = new ArrayList<BookR>();
-        String query = "select r.rid, r.urlimage1, r.rankofRoom, t.roomType, r.priceRoom,\n"
+        String query = "select r.rid, r.urlimage1,  t.roomType, r.priceRoom,\n"
                 + "o.datecheckin, o.datecheckout, DATEDIFF(day, o.datecheckin, o.datecheckout) * r.priceRoom, o.phid, DATEDIFF(day, o.datecheckin, o.datecheckout) as rdate\n"
                 + "from bookroom as o , room as r, roomtype as t\n"
                 + "where o.rid = r.rid and r.rtid = t.rtid and CONCAT(r.rid,o.datecheckin, o.datecheckout) LIKE ?";
@@ -1414,13 +1415,12 @@ public class DAOA {
                         rs.getInt(1),
                         rs.getString(2),
                         rs.getString(3),
-                        rs.getString(4),
-                        rs.getFloat(5),
+                        rs.getFloat(4),
+                        rs.getString(5),
                         rs.getString(6),
-                        rs.getString(7),
-                        rs.getFloat(8),
-                        rs.getInt(9),
-                        rs.getInt(10)));
+                        rs.getFloat(7),
+                        rs.getInt(8),
+                        rs.getInt(9)));
             }
         } catch (SQLException e) {
             // Handle any exceptions that occur
@@ -1440,7 +1440,7 @@ public class DAOA {
 
     public List<BookR> getABR(int a) {
         List<BookR> list = new ArrayList<>();
-        String query = "SELECT r.rid, r.urlimage1, r.rankofRoom, t.roomType, r.priceRoom,\n"
+        String query = "SELECT r.rid, r.urlimage1, t.roomType, r.priceRoom,\n"
                 + "       o.datecheckin, o.datecheckout, \n"
                 + "       DATEDIFF(o.datecheckout, o.datecheckin) * r.priceRoom AS total_price,\n"
                 + "       o.phid, DATEDIFF(o.datecheckout, o.datecheckin) AS rental_days\n"
@@ -1458,13 +1458,12 @@ public class DAOA {
                         rs.getInt(1),
                         rs.getString(2),
                         rs.getString(3),
-                        rs.getString(4),
-                        rs.getFloat(5),
+                        rs.getFloat(4),
+                        rs.getString(5),
                         rs.getString(6),
-                        rs.getString(7),
-                        rs.getFloat(8),
-                        rs.getInt(9),
-                        rs.getInt(10)));
+                        rs.getFloat(7),
+                        rs.getInt(8),
+                        rs.getInt(9)));
             }
         } catch (SQLException e) {
             // Handle any exceptions that occur
@@ -1673,7 +1672,7 @@ public class DAOA {
 
     public List<bill> getSBill(String search) {
         List<bill> list = new ArrayList<bill>();
-        String query = "select b.phid, c.cid, c.cname, c.urlimage, c.sdt, c.caddress, b.datePay, b.totalmoney, v.vid, v.vname, v.discount, b.bstatus, c.country\n"
+        String query = "select b.phid, c.cid, c.cname, c.urlimage, c.sdt, c.caddress, b.datePay, b.totalmoney, v.vid, v.vname, v.discout, b.bstatus, c.country\n"
                 + "from bill as b, voucher as v, customer as c\n"
                 + "where b.cid = c.cid and v.vid = b.vid and CONCAT(b.phid,c.cname,c.sdt) like ?";
         try {
@@ -1743,7 +1742,7 @@ public class DAOA {
 
     public static void main(String[] args) {
         DAOA dao = new DAOA();
-        List<BookR> a = dao.getABR(1);
+        List<BookR> a = dao.getBRoom();
         for (BookR bookR : a) {
             System.out.println(bookR);
         }

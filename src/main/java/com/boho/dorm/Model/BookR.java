@@ -12,7 +12,6 @@ package com.boho.dorm.Model;
 public class BookR {
     private int rid;
     private String rimg;
-    private String rankroom;
     private String roomtype;
     private float rprice;
     private String checkin;
@@ -24,10 +23,9 @@ public class BookR {
     public BookR() {
     }
 
-    public BookR(int rid, String rimg, String rankroom, String roomtype, float rprice, String checkin, String checkout, float rtotal, int phid, int rdate) {
+    public BookR(int rid, String rimg,  String roomtype, float rprice, String checkin, String checkout, float rtotal, int phid, int rdate) {
         this.rid = rid;
         this.rimg = rimg;
-        this.rankroom = rankroom;
         this.roomtype = roomtype;
         this.rprice = rprice;
         this.checkin = checkin;
@@ -67,14 +65,6 @@ public class BookR {
 
     public void setRimg(String rimg) {
         this.rimg = rimg;
-    }
-
-    public String getRankroom() {
-        return rankroom;
-    }
-
-    public void setRankroom(String rankroom) {
-        this.rankroom = rankroom;
     }
 
     public String getRoomtype() {
@@ -119,7 +109,7 @@ public class BookR {
 
     @Override
     public String toString() {
-        return "BookR{" + "rid=" + rid + ", rimg=" + rimg + ", rankroom=" + rankroom + ", roomtype=" + roomtype + ", rprice=" + rprice + ", checkin=" + checkin + ", checkout=" + checkout + ", rtotal=" + rtotal + ", phid=" + phid + ", rdate=" + rdate + '}';
+        return "BookR{" + "rid=" + rid + ", rimg=" + rimg + ", roomtype=" + roomtype + ", rprice=" + rprice + ", checkin=" + checkin + ", checkout=" + checkout + ", rtotal=" + rtotal + ", phid=" + phid + ", rdate=" + rdate + '}';
     }
 
 }
