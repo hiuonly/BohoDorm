@@ -1,8 +1,6 @@
 
-<%@page import="com.boho.dorm.dao.DAO"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="db" class="DAO" scope="request"></jsp:useBean>
     <!DOCTYPE html>
     <html>
         <head>
