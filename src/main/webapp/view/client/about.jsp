@@ -162,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="image" style="background-image:url(https://thietkenoithatatz.com/wp-content/uploads/2022/10/thiet-ke-quan-cafe-san-vuon-16.jpg)">
-                                <img src="https://images.pexels.com/photos/3225531/pexels-photo-3225531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+                                <img src="https://thietkenoithatatz.com/wp-content/uploads/2022/10/thiet-ke-quan-cafe-san-vuon-16.jpg" alt="" />
                             </div>
                         </div>
 
