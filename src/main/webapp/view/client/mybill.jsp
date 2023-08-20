@@ -123,7 +123,7 @@
                                                 </td>
 
                                                 <td class="border-0">${b.pdate}</td>
-                                                <td class="border-0">${b.totalmoney}$</td>
+                                                <td class="border-0">${b.totalmoney}00VND</td>
                                                 <td class="border-0 text-status">
                                                     <c:if test="${b.status == 2}">
                                                         <span class="fw-normal textsuccess">

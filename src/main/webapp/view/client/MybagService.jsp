@@ -83,7 +83,7 @@
                                                     <tfoot> 
                                                         <tr>
 
-                                                            <th colspan="5" class="text-right">Total: $${total}</th>
+                                                            <th colspan="5" class="text-right">Total: ${total}00VND</th>
                                                         </tr>
                                                     </tfoot>
                                                 </table>

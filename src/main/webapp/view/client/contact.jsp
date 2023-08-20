@@ -42,7 +42,6 @@
                     <div class="contact_box">
                         <!--Form -->
                         <div class="contact form">
-                            <h3>Get in touch</h3>
                             <div id="myForm">
                                 <div class="formBox">
                                     <div class="rows50">
@@ -76,15 +75,15 @@
 
                                     <div class="rows100">
                                         <div class="inputBox">
-                                            <input style="background-color: #C5966D" onclick="SendMail()" class="submit-btn" type="submit" value="Send Message">
+                                            <input style="background-color: #965418" onclick="SendMail()" class="submit-btn" type="submit" value="Send Message">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!--info Box-->
-                        <div class="contact info" style="background-color: #C5966D;">
-                            <h3>Contact Info</h3>
+                        <div class="contact info" style="background-color: #965418;">
+                            <h3 style="font-family: inherit">Contact Information</h3>
                             <div class="infoBox">
                                 <div>
                                     <span><ion-icon name="location-outline"></ion-icon></span>

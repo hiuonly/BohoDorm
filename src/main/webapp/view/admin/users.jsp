@@ -438,7 +438,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        $${r.priceroom}
+                                        ${r.priceroom}.000VND
                                     </span>
                                 </td>
                                 <td>

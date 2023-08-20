@@ -53,7 +53,7 @@
                         <div class="rooms2 mb-90 left animate-box" data-animate-effect="fadeInUp">
                             <figure><img style="height: 500px; width: 100%" src="img/${r.urlimage1}" alt="" class="img-fluid"></figure>
                             <div class="caption">
-                                <h3>${r.priceRoom}$ <span>/ Night</span></h3>
+                                <h3>${r.priceRoom}00VND <span>/1 Pax/ Night</span></h3>
                                 <h4><a href="roomdetail?rid=${r.rid}">${r.roomType}</a></h4>
                                 <p>${r.describle}</p>
                                 <div class="row room-facilities">

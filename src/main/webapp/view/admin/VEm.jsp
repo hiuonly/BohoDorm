@@ -339,7 +339,7 @@
                                 <td>
 
                                     <span class="fw-normal d-flex align-items-center">
-                                        ${r.salary}$
+                                        ${r.salary}.000VND
                                     </span>
 
                                 </td>
@@ -426,7 +426,6 @@
             }
         </script>
         <script data-cfasync="false" src="js/email-decode.min.js">
-
         </script>
 
         <script src="js/popper.min.js"></script>

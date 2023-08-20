@@ -138,12 +138,6 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="page-list-icon"> <span class="fa fa-tv"></span> </div>
-                                <div class="page-list-text">
-                                    <p>TV</p>
-                                </div>
-                            </li>
-                            <li>
                                 <div class="page-list-icon"> <span class="fa fa-utensils"></span> </div>
                                 <div class="page-list-text">
                                     <p>Breakfast</p>

@@ -200,7 +200,7 @@
                                 </td>
                                 <td><span class="fw-bold">${b.sdt}</span></td>
                                 <td><span class="fw-bold">${b.paydate}</span></td>
-                                <td><span class="fw-bold">$${b.total}</span></td>
+                                <td><span class="fw-bold">${b.total}00VND</span></td>
                                 <td>
                                     <c:if test="${b.status == 2}">
                                         <span class="fw-normal text-success">
@@ -317,4 +317,3 @@
     </body>
 
 </html>
-

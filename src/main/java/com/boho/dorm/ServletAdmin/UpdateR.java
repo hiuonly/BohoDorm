@@ -61,8 +61,6 @@ public class UpdateR extends HttpServlet {
         String id = request.getParameter("id");
         DAOA dao = new DAOA();
         com.boho.dorm.Model.Room s = dao.getRoom(id);
-        List<com.boho.dorm.Model.RoomType> list = dao.getAllRoomtype();
-        request.setAttribute("listR", list);
         request.setAttribute("r", s);
         request.getRequestDispatcher("view/admin/UpdateR.jsp").forward(request, response);
     }

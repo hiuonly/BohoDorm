@@ -153,7 +153,7 @@ public class DAOA {
     public Employees checkEmployees(String user) {
         String query = "select eid, urlimage, ename, birthofday, position, gender, eaddress, sdt,\n"
                 + "cccd, salary, employees.usid, qlusers.username, qlusers.password, qlusers.email, qlusers.urole\n"
-                + "from employees, QLusers\n"
+                + "from employees, qlusers\n"
                 + "where employees.usid = qlusers.usid and qlusers.username = ?";
         try {
             conn = new DBConnect().connection;
@@ -962,7 +962,7 @@ public class DAOA {
     }
 
     public void UpdateV(int vid, String img, String name, String descible, int discount) {
-        String query = "update voucher set urlimage = ?, vname = ?, describle = ?, discout = ? where vid = ?";
+        String query = "update voucher set urlimage = ?, vname = ?, describle = ?, discount = ? where vid = ?";
         try {
             conn = new DBConnect().connection;
             ps = conn.prepareStatement(query);
@@ -1672,7 +1672,7 @@ public class DAOA {
 
     public List<bill> getSBill(String search) {
         List<bill> list = new ArrayList<bill>();
-        String query = "select b.phid, c.cid, c.cname, c.urlimage, c.sdt, c.caddress, b.datePay, b.totalmoney, v.vid, v.vname, v.discout, b.bstatus, c.country\n"
+        String query = "select b.phid, c.cid, c.cname, c.urlimage, c.sdt, c.caddress, b.datePay, b.totalmoney, v.vid, v.vname, v.discount, b.bstatus, c.country\n"
                 + "from bill as b, voucher as v, customer as c\n"
                 + "where b.cid = c.cid and v.vid = b.vid and CONCAT(b.phid,c.cname,c.sdt) like ?";
         try {

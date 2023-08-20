@@ -1,7 +1,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<jsp:useBean id="db" class="com.boho.dorm.dao.DAO" scope="request"></jsp:useBean>
+<jsp:useBean id="db" class="dao.DAO" scope="request"></jsp:useBean>
 <!DOCTYPE html>
 <html>
     <head>
@@ -80,7 +80,7 @@
                                                         <c:forEach items="${listS1}" var="s1">
                                                             <div class="col-md-6">
                                                                 <div class="menu-info">
-                                                                    <h5>${s1.sname} <span class="price">${s1.price}$</span></h5>
+                                                                    <h5>${s1.sname} <span class="price">${s1.price}00VND</span></h5>
                                                                     <p>${s1.describle}                                                            
                                                                         <input type="submit" onclick="Buy('${s1.srid}')" value="Buy">                                                                                                 
                                                                     </p>
@@ -96,7 +96,7 @@
                                                         <c:forEach items="${listS2}" var="s2">
                                                             <div class="col-md-6">
                                                                 <div class="menu-info">
-                                                                    <h5>${s2.sname} <span class="price">${s2.price}$</span></h5>
+                                                                    <h5>${s2.sname} <span class="price">${s2.price}00VND</span></h5>
                                                                     <p>${s2.describle}
                                                                         <input type="submit" onclick="Buy('${s2.srid}')" value="Buy">                                                                 
                                                                     </p>

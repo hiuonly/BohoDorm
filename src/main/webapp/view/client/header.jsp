@@ -7,7 +7,9 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <!-- Brand and toggle get grouped for better mobile display -->
             <a class="navbar-brand logo_h" href="#"><img src="view/client/image/icon/boho.png" style="width: 70px;">
-                <span style="font-size: 30px">BOHO DORM</span>
+                <span style="font-size: 30px;">BOHO DORM
+                    <h3 style="font-size: 10px; text-align: center">Accommodation and Coffee</h3>
+                </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon-bar"></span>
@@ -35,8 +37,8 @@
                             <c:if test="${sessionScope.acc != null && sessionScope.acc.urole == 0}">
                                 <a href="myprofile?id=${sessionScope.acc.usid}"><li class="nav-item" id="menu-profile"><img class="nav-link" src="view/client/image/icon/user.png">My Profile</li></a>
                                 <a href="mybill?id=${sessionScope.acc.usid}"><li class="nav-item" id="menu-profile"><img class="nav-link" src="view/client/image/icon/bill.png">My Bill</li></a>
-                                </c:if>                                   
-                                <c:if test="${sessionScope.acc != null}">                              
+                                    </c:if>                                   
+                                    <c:if test="${sessionScope.acc != null}">                              
                                 <a href="${pageContext.request.contextPath}/logout"><li class="nav-item" id="menu-profile"><img class="nav-link" src="view/client/image/icon/log-out.png">Logout</li></a>
                                     </c:if>
 

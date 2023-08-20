@@ -513,7 +513,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        ${r.price}đ
+                                        ${r.price}00VND
                                     </span>
                                 </td>
                             </tr>

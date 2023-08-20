@@ -220,7 +220,7 @@
                                 <div class="profile-cover rounded-top" data-background="img/profile-cover.jpg"></div>
                                 <div class="card-body pb-5">
                                     <img src="view/client/image/icon/5-stars.png" class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
-                                    <h4 class="h3">Hotel HSM</h4>
+                              
                                     <h5 class="fw-normal">Come, stay and enjoy your day</h5>
                                     <p class="text-gray mb-4">We give you a legendary welcome, every time you come back</p>
                                 </div>

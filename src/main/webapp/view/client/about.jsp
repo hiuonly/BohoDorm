@@ -39,7 +39,7 @@
                                 <div class="col-md-8 col-md-offset-2">
 
                                     <div class="text">
-                                        <h2>BOHO DORM</h2>
+                                        <h2 style="font-size: 50px">BOHO DORM</h2>
 
                                         <!-- ===  Gallery === -->
 
@@ -137,7 +137,6 @@
                                     <ul>
                                         <li>Our doors are open 24/7</li>
                                         <li>Complimentary WiFi for All Members</li>
-                                        <li>Valet Parking $65-$75/day</li>
                                         <li>Pets Welcome</li>
                                         <li>Early Check-In Available</li>
                                         <li>Best Prices Guaranteed</li>

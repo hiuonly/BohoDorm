@@ -295,7 +295,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        $${r.rprice}
+                                        ${r.rprice}00VND
                                     </span>
                                 </td>
                                 <td>
@@ -310,7 +310,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        $${r.rtotal}
+                                        ${r.rtotal}00VND
                                     </span>
                                 </td>
                             </tr>

@@ -98,15 +98,15 @@
                                             <td class="text-center">${r.bdate}</td>
                                             <td class="text-center">${r.datecheckin}</td>
                                             <td class="text-center">${r.datecheckout}</td>
-                                            <td class="text-center">$${r.rprice}</td>
-                                            <td class="text-center">$${r.price}</td>
+                                            <td class="text-center">${r.rprice}00VND</td>
+                                            <td class="text-center">${r.price}00VND</td>
                                         </tr>
                                     </c:forEach>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th colspan="5" class="text-right">Total:</th>
-                                        <th class="text-center">$${totalr}</th>
+                                        <th class="text-center">${totalr}00VND</th>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -131,15 +131,15 @@
                                                 </p>
                                             </td>
                                             <td class="text-center">${b.quantity}</td>
-                                            <td class="text-center">$${b.sprice}</td>
-                                            <td class="text-center">$${b.price}</td>
+                                            <td class="text-center">${b.sprice}00VND</td>
+                                            <td class="text-center">${b.price}00VND</td>
                                         </tr>
                                     </c:forEach>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th colspan="3" class="text-right">Total:</th>
-                                        <th class="text-center">$${total}</th>
+                                        <th class="text-center">${total}00VND</th>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -156,7 +156,7 @@
                                             <tbody>
                                                 <tr>
                                                     <th class="text-left">Subtotal:</th>
-                                                    <td class="text-right">$${total + totalr}</td>
+                                                    <td class="text-right">${total + totalr}00VND</td>
                                                 </tr>
                                                 <tr>
                                                     <th class="text-left">Voucher:</th>
@@ -164,7 +164,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th class="text-left">Total:</th>
-                                                    <td class="text-right text-primary"><h5 class="font-weight-semibold">$${(total + totalr) * (100-l.discout)/100}</h5></td>
+                                                    <td class="text-right text-primary"><h5 class="font-weight-semibold">${(total + totalr) * (100-l.discout)/100}00VND</h5></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -188,4 +188,6 @@
             </div>
         </div>
     </body>
+</html>
+
 </html>

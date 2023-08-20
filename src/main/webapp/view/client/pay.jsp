@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-9 col-md-6 col-lg-8 pay-infoRoom">
-                                <span class="text-title">${listrPay.priceRoom}$ / Night</span>
+                                <span class="text-title">${listrPay.priceRoom}$ /1 Pax/ Night</span>
                                 <h3>${listrPay.roomType}</h3>
                                 <span>
                                     <i class="star-rating"></i>
@@ -67,7 +67,6 @@
                                     <li>guests <span>${listrPay.peopleNumber} <i class="fa fa-users"></i></span></li>
                                     <li>bath <span> <i class="fa fa-bath"></i></span></li>
                                     <li>wifi <span><i class="fa fa-wifi"></i></span></li>
-                                    <li>tv <span> <i class="fa fa-tv"></i></span></li>
                                 </ul>
                             </div>
                             <div class="description">

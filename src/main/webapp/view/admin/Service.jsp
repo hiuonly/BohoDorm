@@ -403,7 +403,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        ${r.price}$
+                                        ${r.price}00VND
                                     </span>
                                 </td>
                                 <td>

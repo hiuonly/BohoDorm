@@ -330,7 +330,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        ${r.priceroom}$
+                                        ${r.priceroom}00VND
                                     </span>
                                 </td>
                                 <td>

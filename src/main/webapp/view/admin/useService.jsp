@@ -291,7 +291,7 @@
                                 <td>
                                     <div class="d-block">
                                         <span class="fw-bold">
-                                            $${r.sprice}
+                                            ${r.sprice}00VND
                                         </span>
                                     </div>
                                 </td>
@@ -307,7 +307,7 @@
                                 </td>
                                 <td>
                                     <span class="fw-normal d-flex align-items-center">
-                                        $${r.price}
+                                        ${r.price}00VND
                                     </span>
                                 </td>
                             </tr>
