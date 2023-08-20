@@ -22,9 +22,9 @@
                 <a href="homeP"><i class="fa fa-angle-left"></i> Home</a>
             </div>
             <div class="page-header" style="background-image:url(view/client/image/gallery/background.jpeg)">
-                <div class="container">
-                    <h2 class="title">The dorm</h2>
-                    <p>Come, stay and enjoy your day</p>
+                <div class="container" style="color: black">
+                    <h2 class="title" style="color: black">The dorm</h2>
+                    <p style="font-family: cursive">Come, stay and enjoy your day</p>
                 </div>
             </div>
             <div class="image-blocks image-blocks-category">

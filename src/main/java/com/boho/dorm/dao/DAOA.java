@@ -825,7 +825,7 @@ public class DAOA {
         }
     }
 
-    public void UpdateR(int rid, String aimg, String bimg, String cimg, String roomtype, int Peoplenumber, int bednumber, String rankRoom, int priceroom, String describle) {
+    public void UpdateR(int rid, String aimg, String bimg, String cimg, String roomtype, int Peoplenumber, int bednumber, int priceroom, String describle) {
         String query = "update room set urlimage1 = ?, urlimage2 = ?, urlimage3 = ?, rtid = ?, peopleNumber = ?, \n"
                 + "bedNumber= ?, priceRoom = ?, describle = ?\n"
                 + "where rid = ?";
@@ -837,11 +837,10 @@ public class DAOA {
             ps.setString(3, cimg);
             ps.setString(4, roomtype);
             ps.setInt(5, Peoplenumber);
-            ps.setString(6, rankRoom);
-            ps.setInt(7, bednumber);
-            ps.setInt(8, priceroom);
-            ps.setString(9, describle);
-            ps.setInt(10, rid);
+            ps.setInt(6, bednumber);
+            ps.setInt(7, priceroom);
+            ps.setString(8, describle);
+            ps.setInt(9, rid);
             ps.executeUpdate();
         } catch (SQLException e) {
             // Handle any exceptions that occur

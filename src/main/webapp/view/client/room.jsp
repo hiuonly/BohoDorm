@@ -27,84 +27,89 @@
     <body>
         <!--================Header Area =================-->
         <jsp:include page="header.jsp"></jsp:include>
-        <!--================Header Area =================-->     
-        
- <!--================Breadcrumb Area =================-->
-        <section class="breadcrumb_area">
-            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
-            <div class="container">
-                <div class="page-cover text-center">
-                    <h2 class="page-cover-tittle">Rooms</h2>
-                    <ol class="breadcrumb">
-                        <li><a href="homeP">Home</a></li>
-                        <li class="active">Rooms</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-        <!--================Breadcrumb Area =================-->
+            <!--================Header Area =================-->     
 
-        <!--================Room Area =================-->
-        <section class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+            <!--================Breadcrumb Area =================-->
+            <section class="breadcrumb_area">
+                <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+                <div class="container">
+                    <div class="page-cover text-center">
+                        <h2 class="page-cover-tittle">Rooms</h2>
+                        <ol class="breadcrumb">
+                            <li><a href="homeP">Home</a></li>
+                            <li class="active">Rooms</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <!--================Breadcrumb Area =================-->
+
+            <!--================Room Area =================-->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
                         <c:forEach items="${listR}" var="r">
-                        <div class="rooms2 mb-90 left animate-box" data-animate-effect="fadeInUp">
-                            <figure><img style="height: 500px; width: 100%" src="img/${r.urlimage1}" alt="" class="img-fluid"></figure>
-                            <div class="caption">
-                                <h3>${r.priceRoom}00VND <span>/1 Pax/ Night</span></h3>
-                                <h4><a href="roomdetail?rid=${r.rid}">${r.roomType}</a></h4>
-                                <p>${r.describle}</p>
-                                <div class="row room-facilities">
-                                    <div class="col-md-4">
-                                        <ul>
-                                            <li><i class="fas fa-users"></i> ${r.peopleNumber} Persons</li>
-                                            <li><i class="fas fa-wifi"></i> Free Wifi</li>
-                                        </ul>
+                            <div class="rooms2 mb-90 left animate-box" data-animate-effect="fadeInUp">
+                                <figure><img style="height: 500px; width: 100%" src="img/${r.urlimage1}" alt="" class="img-fluid"></figure>
+                                <div class="caption">
+                                    <h3>${r.priceRoom}00VND <span>/1 Pax/ Night</span></h3>
+                                    <h4><a href="roomdetail?rid=${r.rid}">${r.roomType}</a></h4>
+                                    <p>${r.describle}</p>
+                                    <div class="row room-facilities">
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li><i class="fas fa-users"></i> ${r.peopleNumber} Persons</li>
+                                                <li><i class="fas fa-wifi"></i> Free Wifi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <c:if test="${r.bedNumber == 1}">
+                                                    <li><i class="fas fa-bed"></i> 1 Bed</li>
+                                                </c:if>
+                                                <c:if test="${r.bedNumber != 1}">
+                                                    <li><i class="fas fa-bed"></i> ${r.bedNumber} Bunk</li>
+                                                </c:if>
+                                                <li><i class="fas fa-utensils"></i> Breakfast</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <ul>
-                                            <li><i class="fas fa-bed"></i> ${r.bedNumber} Bed</li>
-                                            <li><i class="fas fa-utensils"></i> Breakfast</li>
-                                        </ul>
+                                    <hr class="border-2">
+                                    <div class="info-wrapper">
+                                        <div class="more"><a href="roomdetail?rid=${r.rid}" class="link-btn" tabindex="0">Details <i class="fas fa-arrow-right"></i></a></div>
+                                        <div class="butn-dark"> <a href="pay?rid=${r.rid}" data-scroll-nav="1"><span>Book Now</span></a> </div>
                                     </div>
-                                </div>
-                                <hr class="border-2">
-                                <div class="info-wrapper">
-                                    <div class="more"><a href="roomdetail?rid=${r.rid}" class="link-btn" tabindex="0">Details <i class="fas fa-arrow-right"></i></a></div>
-                                    <div class="butn-dark"> <a href="pay?rid=${r.rid}" data-scroll-nav="1"><span>Book Now</span></a> </div>
                                 </div>
                             </div>
-                        </div>
-                    </c:forEach>    
+                        </c:forEach>    
 
                     </div>
                 </div>
             </div>
         </section>
         <!--================Room Area =================-->
-         <!--================ Start footer Area  =================-->
-         <jsp:include page="footer.jsp"></jsp:include>
+        <!--================ Start footer Area  =================-->
+        <jsp:include page="footer.jsp"></jsp:include>
         <!--================ End footer Area  =================-->
-          
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--        <script src="js/jquery-3.2.1.min.js"></script>-->
+        <!--        <script src="js/jquery-3.2.1.min.js"></script>-->
         <script src="view/client/js/jquery-3.6.0.min.js"></script>
         <script src="view/client/js/popper.js"></script>
         <script src="view/client/js/bootstrap.min.js"></script>
         <script src="view/client/vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="view/client/js/jquery.ajaxchimp.min.js"></script>
-<!--        <script src="js/mail-script.js"></script>-->
+        <!--        <script src="js/mail-script.js"></script>-->
         <script src="view/client/vendors/nice-select/js/jquery.nice-select.js"></script>
-<!--        <script src="js/mail-script.js"></script>-->
+        <!--        <script src="js/mail-script.js"></script>-->
         <script src="view/client/js/stellar.js"></script>   
         <script src="view/client/vendors/lightbox/simpleLightbox.min.js"></script>
         <script src="view/client/js/scrollIt.min.js"></script>
         <script src="view/client/js/owl.carousel.min.js"></script>
         <script src="view/client/js/YouTubePopUp.js"></script>
         <script src="view/client/js/smooth-scroll.min.js"></script>
-<!--        <script src="js/home.js"></script>-->
+        <!--        <script src="js/home.js"></script>-->
     </body>
 </html>

@@ -81,19 +81,18 @@ public class UpdateR extends HttpServlet {
         String aimg = request.getParameter("img1");
         String bimg = request.getParameter("img2");
         String cimg = request.getParameter("img3");
-        String typeroom = request.getParameter("typeroom");
         String pl = request.getParameter("people");
         int people = Integer.parseInt(pl);
         DAOA dao = new DAOA();
         com.boho.dorm.Model.Room s = dao.getRoom(ir);
         int bednumer = Integer.parseInt(request.getParameter("bed"));
-        String rankroom = request.getParameter("rankroom");
         int price = Integer.parseInt(request.getParameter("price"));
         String des = request.getParameter("des");
         String img1 = ((aimg == null) || (aimg.equals(""))) ? s.getAimg() : aimg;
         String img2 = ((bimg == null) || (bimg.equals(""))) ? s.getBimg() : bimg;
         String img3 = ((cimg == null) || (cimg.equals(""))) ? s.getCimg() : cimg;
-        dao.UpdateR(idroom, img1, img2, img3, typeroom, people, bednumer, rankroom, price, des);
+        String typroom = String.valueOf(s.getRoomtype());
+        dao.UpdateR(idroom, img1, img2, img3, typroom, people, bednumer, price, des);
         response.sendRedirect("RoomType");
     }
 

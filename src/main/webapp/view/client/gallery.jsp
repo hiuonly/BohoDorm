@@ -56,7 +56,7 @@
                                     <h4><a href="roomdetail?rid=${r.stid}">${r.sname}</a></h4>
                                     <p>${r.describle}</p>
                                     <c:if test="${r.stid == 1}">
-                                        <p>Open 7am - 9pm</p>  
+                                        <p>Open 7 am - 9 pm</p>  
                                     </c:if> 
                                     <div class="row room-facilities">
                                         <div class="col-md-4">
